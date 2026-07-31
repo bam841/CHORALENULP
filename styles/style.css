@@ -453,6 +453,12 @@ header:not(.scrolled) {
    CONDUCTOR BIOGRAPHY SECTION (GLASSMORPHISM WITH ACCENTS)
    ========================================================================== */
 
+.conductor-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
 .conductor-card {
   display: grid;
   grid-template-cols: 1fr 1.2fr;
@@ -1084,7 +1090,7 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top;
+  object-position: center 28%;
   /* Warm performance lighting filter instead of sad grayscale */
   filter: brightness(0.95) sepia(8%) contrast(1.02) saturate(1.05);
   transition: var(--transition-smooth);
@@ -1093,6 +1099,27 @@ footer {
 .officer-card:hover .officer-img {
   transform: scale(1.04);
   filter: brightness(1.06) sepia(0%) contrast(1.05) saturate(1.15); /* Lights up on hover! */
+}
+
+.officer-placeholder-avatar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(15, 30, 66, 0.95), rgba(212, 175, 55, 0.25));
+  color: var(--accent-gold-bright);
+  font-family: var(--font-display), sans-serif;
+  font-size: 2.2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  transition: var(--transition-smooth);
+}
+
+.officer-card:hover .officer-placeholder-avatar {
+  transform: scale(1.04);
+  background: linear-gradient(135deg, rgba(15, 30, 66, 0.85), rgba(212, 175, 55, 0.35));
+  color: #ffffff;
 }
 
 .officer-info {

@@ -256,7 +256,7 @@ function HomePage({ navigateToSection, setCurrentPage, onJoinClick }) {
           </h1>
           <p className="hero-motto">"One Voice. One Harmony. Proudly Nationalian."</p>
           <p className="hero-desc">
-            Step into the musical soul of National University. Under the artistic guidance of Conductor Gene Roy P. Hernandez, we turn passion, purpose, and pride into a single, breathtaking harmony.
+            Step into the musical soul of National University. Under the artistic guidance of Conductor Dr. Gene Roy Hernandez and Co-Conductor Enrico Trania, we turn passion, purpose, and pride into a single, breathtaking harmony.
           </p>
           <div className="hero-actions">
             <button className="btn btn-primary" onClick={onJoinClick}>Join Us</button>
@@ -294,16 +294,31 @@ function HomePage({ navigateToSection, setCurrentPage, onJoinClick }) {
         <div className="container">
           <span className="section-tracker">Artistic Leadership</span>
           <h2>Under the Baton</h2>
-          <div className="conductor-card">
-            <div className="conductor-img-side">
-              <img className="conductor-img" src="/assets/conductor.jpg" alt="Conductor Gene Roy P. Hernandez portrait" />
+          <div className="conductor-container">
+            <div className="conductor-card">
+              <div className="conductor-img-side">
+                <img className="conductor-img" src="/assets/conductor.jpg" alt="Conductor Dr. Gene Roy Hernandez portrait" />
+              </div>
+              <div className="conductor-details">
+                <span className="conductor-role">Choir Director & Conductor</span>
+                <h3 className="conductor-name">Dr. Gene Roy Hernandez</h3>
+                <p className="conductor-bio">
+                  Proudly led by our conductor, Dr. Gene Roy Hernandez, the NULP Chorale has flourished. Under his inspiring leadership and artistic vision, our members learn to sing with purpose, passion, and pride, transforming individual voices into a single, breathtaking harmony.
+                </p>
+              </div>
             </div>
-            <div className="conductor-details">
-              <span className="conductor-role">Choir Director & Conductor</span>
-              <h3 className="conductor-name">Gene Roy P. Hernandez</h3>
-              <p className="conductor-bio">
-                Proudly led by our conductor, Gene Roy P. Hernandez, the NULP Chorale has flourished. Under his inspiring leadership and artistic vision, our members learn to sing with purpose, passion, and pride, transforming individual voices into a single, breathtaking harmony.
-              </p>
+
+            <div className="conductor-card">
+              <div className="conductor-img-side">
+                <img className="conductor-img" src="/assets/conductor_enrico.jpg" alt="Co-Conductor Enrico Trania portrait" />
+              </div>
+              <div className="conductor-details">
+                <span className="conductor-role">Co-Conductor</span>
+                <h3 className="conductor-name">Enrico Trania</h3>
+                <p className="conductor-bio">
+                  As the student Co-Conductor of the NULP Chorale, Enrico Trania works hand-in-hand with our Choir Director to lead rehearsals, refine vocal techniques, and shape musical performances, helping the ensemble achieve artistic excellence and precision.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -510,7 +525,48 @@ function OfficersPage() {
       <section className="section-padding" style={{ paddingTop: '4rem' }}>
         <div className="container">
           
-          {/* Tier 1: Executive Board */}
+          {/* Tier 1: Artistic & Advisory Board */}
+          <div className="officers-tier fade-in-section">
+            <h2 className="tier-title">Artistic & Advisory Board</h2>
+            <div className="officers-tier-flex">
+              
+              {/* Co-Conductor */}
+              <div className="officer-card">
+                <div className="officer-img-container">
+                  <img className="officer-img" src="/assets/officers/coconductor.jpg" alt="Co-Conductor Enrico Trania" />
+                </div>
+                <div className="officer-info">
+                  <div className="officer-role">Co-Conductor</div>
+                  <div className="officer-name">Enrico Trania</div>
+                </div>
+              </div>
+
+              {/* Junior Advisor Alejandro */}
+              <div className="officer-card">
+                <div className="officer-img-container">
+                  <img className="officer-img" src="/assets/officers/junior_advisor_alejandro.jpg" alt="Junior Advisor Alejandro Pacano Jr." />
+                </div>
+                <div className="officer-info">
+                  <div className="officer-role">Junior Advisor</div>
+                  <div className="officer-name">Alejandro Pacano Jr.</div>
+                </div>
+              </div>
+
+              {/* Junior Advisor Francine */}
+              <div className="officer-card">
+                <div className="officer-img-container">
+                  <div className="officer-placeholder-avatar">FM</div>
+                </div>
+                <div className="officer-info">
+                  <div className="officer-role">Junior Advisor</div>
+                  <div className="officer-name">Francine Louise Maldonado</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Tier 2: Executive Board */}
           <div className="officers-tier fade-in-section">
             <h2 className="tier-title">Executive Board</h2>
             <div className="officers-tier-flex">
@@ -518,11 +574,11 @@ function OfficersPage() {
               {/* President */}
               <div className="officer-card">
                 <div className="officer-img-container">
-                  <img className="officer-img" src="/assets/officers/president.jpg" alt="President Derwyn Mico Candelarua Diaz" />
+                  <img className="officer-img" src="/assets/officers/president.jpg" alt="President Derwyn Mico Diaz" />
                 </div>
                 <div className="officer-info">
                   <div className="officer-role">President</div>
-                  <div className="officer-name">Derwyn Mico Candelarua Diaz</div>
+                  <div className="officer-name">Derwyn Mico Diaz</div>
                 </div>
               </div>
               
@@ -532,7 +588,7 @@ function OfficersPage() {
                   <img className="officer-img" src="/assets/officers/vicepresident.jpg" alt="Vice President Adnyani Ace Budhaya" />
                 </div>
                 <div className="officer-info">
-                  <div className="officer-role">Vice President</div>
+                  <div className="officer-role">Vice President & External Affairs</div>
                   <div className="officer-name">Adnyani Ace Budhaya</div>
                 </div>
               </div>
@@ -540,7 +596,7 @@ function OfficersPage() {
             </div>
           </div>
           
-          {/* Tier 2: Secretariat & Finance */}
+          {/* Tier 3: Secretariat & Finance */}
           <div className="officers-tier fade-in-section">
             <h2 className="tier-title">Secretariat & Finance</h2>
             <div className="officers-tier-flex">
@@ -548,22 +604,22 @@ function OfficersPage() {
               {/* Secretary */}
               <div className="officer-card">
                 <div className="officer-img-container">
-                  <img className="officer-img" src="/assets/officers/secretary.jpg" alt="Secretary John Abrahm" />
+                  <img className="officer-img" src="/assets/officers/secretary.jpg" alt="Secretary John Abrahm Zapico" />
                 </div>
                 <div className="officer-info">
                   <div className="officer-role">Secretary</div>
-                  <div className="officer-name">John Abrahm</div>
+                  <div className="officer-name">John Abrahm Zapico</div>
                 </div>
               </div>
               
               {/* Assistant Secretary */}
               <div className="officer-card">
                 <div className="officer-img-container">
-                  <img className="officer-img" src="/assets/officers/assistant_secretary.jpg" alt="Assistant Secretary Kristine Faye R. Reyes" />
+                  <img className="officer-img" src="/assets/officers/assistant_secretary.jpg" alt="Assistant Secretary Kristine Faye Reyes" />
                 </div>
                 <div className="officer-info">
                   <div className="officer-role">Assistant Secretary</div>
-                  <div className="officer-name">Kristine Faye R. Reyes</div>
+                  <div className="officer-name">Kristine Faye Reyes</div>
                 </div>
               </div>
               
@@ -581,18 +637,18 @@ function OfficersPage() {
               {/* Auditor */}
               <div className="officer-card">
                 <div className="officer-img-container">
-                  <img className="officer-img" src="/assets/officers/auditor.jpg" alt="Auditor Ghendy Wayne Valmoria Balhag" />
+                  <img className="officer-img" src="/assets/officers/auditor.jpg" alt="Auditor Ghendy Wayne Balhag" />
                 </div>
                 <div className="officer-info">
                   <div className="officer-role">Auditor</div>
-                  <div className="officer-name">Ghendy Wayne Valmoria Balhag</div>
+                  <div className="officer-name">Ghendy Wayne Balhag</div>
                 </div>
               </div>
               
             </div>
           </div>
           
-          {/* Tier 3: Public Relations Board */}
+          {/* Tier 4: Public Relations Board */}
           <div className="officers-tier fade-in-section">
             <h2 className="tier-title">Public Relations Board</h2>
             <div className="officers-tier-flex">
@@ -600,29 +656,29 @@ function OfficersPage() {
               {/* Main PIO */}
               <div className="officer-card">
                 <div className="officer-img-container">
-                  <img className="officer-img" src="/assets/officers/main_pio.jpg" alt="Main PIO Zyrel Nacario" />
+                  <img className="officer-img" src="/assets/officers/main_pio.jpg" alt="PIO 1 Shekinah G. Lapitan" />
                 </div>
                 <div className="officer-info">
                   <div className="officer-role">PIO 1</div>
-                  <div className="officer-name">Zyrel Nacario</div>
+                  <div className="officer-name">Shekinah G. Lapitan</div>
                 </div>
               </div>
               
               {/* PIO 2 */}
               <div className="officer-card">
                 <div className="officer-img-container">
-                  <img className="officer-img" src="/assets/officers/pio2.jpg" alt="PIO 2 Shekinah G. Lapitan" />
+                  <img className="officer-img" src="/assets/officers/pio2.jpg" alt="PIO 2 Zyrel Nacario" />
                 </div>
                 <div className="officer-info">
                   <div className="officer-role">PIO 2</div>
-                  <div className="officer-name">Shekinah G. Lapitan</div>
+                  <div className="officer-name">Zyrel Nacario</div>
                 </div>
               </div>
               
             </div>
           </div>
           
-          {/* Tier 4: Section Leaders */}
+          {/* Tier 5: Section Leaders */}
           <div className="officers-tier fade-in-section" style={{ marginBottom: 0 }}>
             <h2 className="tier-title">Section Leaders</h2>
             <div className="officers-tier-flex">
@@ -641,33 +697,33 @@ function OfficersPage() {
               {/* Alto Head */}
               <div className="officer-card">
                 <div className="officer-img-container">
-                  <img className="officer-img" src="/assets/officers/altohead.jpg" alt="Alto Head Lady Faye Espiritu Alo" />
+                  <img className="officer-img" src="/assets/officers/altohead.jpg" alt="Alto Head Lady Faye Alo" />
                 </div>
                 <div className="officer-info">
                   <div className="officer-role">Alto Head</div>
-                  <div className="officer-name">Lady Faye Espiritu Alo</div>
+                  <div className="officer-name">Lady Faye Alo</div>
                 </div>
               </div>
 
               {/* Tenor Head */}
               <div className="officer-card">
                 <div className="officer-img-container">
-                  <img className="officer-img" src="/assets/officers/tenorhead.jpg" alt="Tenor Head Don Nicolo M. Padilla" />
+                  <img className="officer-img" src="/assets/officers/tenorhead.jpg" alt="Tenor Head Don Nicolo Padilla" />
                 </div>
                 <div className="officer-info">
                   <div className="officer-role">Tenor Head</div>
-                  <div className="officer-name">Don Nicolo M. Padilla</div>
+                  <div className="officer-name">Don Nicolo Padilla</div>
                 </div>
               </div>
 
               {/* Bass Head */}
               <div className="officer-card">
                 <div className="officer-img-container">
-                  <img className="officer-img" src="/assets/officers/basshead.jpg" alt="Bass Head John Lemuel Aguila Elare" />
+                  <img className="officer-img" src="/assets/officers/basshead.jpg" alt="Bass Head John Lemuel Elare" />
                 </div>
                 <div className="officer-info">
                   <div className="officer-role">Bass Head</div>
-                  <div className="officer-name">John Lemuel Aguila Elare</div>
+                  <div className="officer-name">John Lemuel Elare</div>
                 </div>
               </div>
               
