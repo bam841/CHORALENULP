@@ -184,7 +184,7 @@ export default function App() {
         <div className="container">
           <div className="footer-logo">NULP CHORALE</div>
           <div className="footer-socials">
-            <a href="https://www.facebook.com/search/top?q=nu%20chorale" target="_blank" rel="noopener noreferrer" className="social-icon-btn" aria-label="Facebook">
+            <a href="https://www.facebook.com/profile.php?id=61592457070544" target="_blank" rel="noopener noreferrer" className="social-icon-btn" aria-label="Facebook">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a1 1 0 0 0-1-1h-2v6.3H13v-6.3h-1.5v-2H13V9.5c0-1.8 1.2-3 3-3h2v2h-1.5c-.5 0-.5.2-.5.5v1.5h2v2h-2v5.5h3z"/>
               </svg>
@@ -494,7 +494,7 @@ function ConnectSection({ onJoinClick }) {
             <p style={{ fontSize: '0.95rem', color: 'var(--text-body)', lineHeight: '1.65', marginBottom: '2.5rem' }}>
               From heartfelt performances to unforgettable moments behind the scenes, follow our official Facebook page to stay updated on our latest news and events.
             </p>
-            <a href="https://www.facebook.com/search/top?q=nu%20chorale" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ width: 'auto', marginTop: 'auto' }}>
+            <a href="https://www.facebook.com/profile.php?id=61592457070544" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ width: 'auto', marginTop: 'auto' }}>
               Visit Facebook Page
             </a>
           </div>
